@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Dashboard PrograMind</title>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="css/imports.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/main.js"></script>
+
+  <title>Media Master API</title>
+</head>
+<body>
+
+  <div class="loading"></div>
+  <div class="overlay">
+    <section class="nav-links">
+    <a href="#home"><span class="slide-center-out"><span>Home</span></span></span></a>
+    <a href="#abt"><span class="slide-center-out"><span>Social api</span></span></a>
+    <a href="#feat"><span class="slide-center-out"><span>Recursos</span></span></a>
+    <a href="#contact"><span class="slide-center-out"><span>Obtenha uma licença</span></span></a>
+    </section>
+    <!--<a href="#"><span class="slide-center-out">Test</span></a>
+    <a href="#"><span class="slide-center-out">Test</span></a>-->
+  </div>
+  <div class="navigation">
+  	<div class="burger_deluxe">
+    	<span class="burger_global top_bun"></span>
+    	<span class="burger_global patty"></span>
+    	<span class="burger_global bottom_bun"></span>
+    </div>
+  </div>
+
+
+  <section id="home" class="header hudson">
+    <section class="header-text">
+      <h1>Media Master</h1>
+      <h2>A solução completa em dados para a sua empresa</h2>
+      <hr></hr>
+      <a class="desce" href="#abt"><button type="button" class="btn-header">Saiba Mais</button></a>
+    </section>
+  </section>
+  <section id="abt" class="about">
+    <h1>Media Master Social api</h1>
+    <hr></hr>
+    <ul>
+      <li>
+        <i class="fa fa-4x fa-twitter " aria-hidden="true"></i>
+        <p>Twitter </p>
+        <small>teste de texto para a descrição</small>
+      </li>
+
+      <li>
+        <i class="fa fa-4x  fa-facebook" aria-hidden="true"></i>
+        <p>Facebook </p>
+        <small>teste de texto para a descrição</small>
+      </li>
+
+      <li>
+        <i class="fa fa-4x  fa-instagram" aria-hidden="true"></i>
+        <p>Instagram </p>
+        <small>teste de texto para a descrição</small>
+      </li>
+
+      <li>
+        <i class="fa fa-4x  fa-linkedin" aria-hidden="true"></i>
+        <p>Linkedin </p>
+        <small>teste de texto para a descrição</small>
+      </li>
+
+      <li>
+        <i class="fa fa-4x  fa-spotify" aria-hidden="true"></i>
+        <p>Spotify </p>
+        <small>teste de texto para a descrição</small>
+      </li>
+
+      <li>
+        <i class="fa fa-4x  fa-youtube-play" aria-hidden="true"></i>
+        <p>Youtube </p>
+        <small>teste de texto para a descrição</small>
+      </li>
+    </ul>
+  </section>
+  <section id="feat" class="features">
+    <h1>Principais Recursos</h1>
+    <hr></hr>
+    <ul>
+      <li>
+        <i class="fa fa-4x fa-search " aria-hidden="true"></i>
+        <p>Pesquisa rápida </p>
+        <small>teste de texto para a descrição</small>
+      </li>
+
+      <li>
+        <i class="fa fa-4x  fa-newspaper-o" aria-hidden="true"></i>
+        <p>Top menções </p>
+        <small>teste de texto para a descrição</small>
+      </li>
+
+      <li>
+        <i class="fa fa-4x  fa-instagram" aria-hidden="true"></i>
+        <p>Heatmap </p>
+        <small>teste de texto para a descrição</small>
+      </li>
+
+      <li>
+        <i class="fa fa-4x  fa-globe" aria-hidden="true"></i>
+        <p>Canais de acesso </p>
+        <small>teste de texto para a descrição</small>
+      </li>
+
+      <li>
+        <i class="fa fa-4x  fa-bar-chart" aria-hidden="true"></i>
+        <p>UTM analytics </p>
+        <small>teste de texto para a descrição</small>
+      </li>
+
+      <li>
+        <i class="fa fa-4x fa-hashtag" aria-hidden="true"></i>
+        <p>Top hashtags </p>
+        <small>teste de texto para a descrição</small>
+      </li>
+    </ul>
+
+  </section>
+  <section id="contact" class="demo">
+    <h1>Quer uma licença? </h1>
+    <small>Preencha o formulário que entraremos em contato</small>
+    <form class="form-contato">
+       <div class="styled-input">
+         <input type="text" required />
+         <label>Nome Completo</label>
+         <span></span>
+       </div>
+
+       <div class="styled-input">
+         <input type="text" name="Nome" required />
+         <label>Email</label>
+         <span></span>
+       </div>
+
+       <div class="styled-input">
+         <input type="tel" name="Telefone" required />
+         <label>Telefone</label>
+         <span></span>
+       </div>
+
+
+       <div class="styled-input">
+         <input type="text" name="Razão Social" required />
+         <label>Razão Social</label>
+         <span></span>
+       </div>
+
+       <div class="styled-input">
+         <input type="text" name="Razão Social" required />
+         <label>Num. de funcionários</label>
+         <span></span>
+       </div>
+
+       <button id="cadastra" type="submit">Cadastrar</button>
+
+     </form>
+  </section>
+
+<script>
+$('a[href*=#]').click(function(event){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 1000);
+    event.preventDefault();
+});
+</script>
+</body>
+</html>
