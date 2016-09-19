@@ -87,8 +87,8 @@ transform: translateY(-50%);
   display: block;
   text-align: center;
   position: relative;
-  top: 18%;
-  transform: translateY(-18%);
+  top: 28%;
+  transform: translateY(-28%);
   }
 .about li{
     display: inline-block;
@@ -123,16 +123,16 @@ transform: translateY(-50%);
     background-image: url('../images/bg2.jpg');
     background-size: cover;
     background-position: center;
-    padding: 8% 0;
+    padding: 10% 0;
   }
-  .features h1{
+  .features h1 {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 3em;
     text-align: center;
     margin: 0 auto 0;
-    padding-top: 5%;
-  }
+    /* padding-top: 5%; */
+}
   .features hr{
     border: 3px solid #f38181;
     width: 3em;
@@ -140,16 +140,17 @@ transform: translateY(-50%);
     text-align: center;
   }
 
-  .features ul{
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    position: relative;
-    top: 18%;
-    transform: translateY(-18%);
-    }
+
+  .features ul {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      /* position: relative; */
+      /* top: 18%; */
+      /* transform: translateY(-18%); */
+  }
   .features li{
       display: inline-block;
       width: 30%;
