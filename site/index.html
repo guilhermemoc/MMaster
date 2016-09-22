@@ -12,8 +12,13 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="stylesheet" href="css/imports.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="http://lab.westilian.com/westilo-admin/full-width-fluid-layout/js/lib/chart/flot/jquery.flot.min.js"></script>
+  <script src="http://lab.westilian.com/westilo-admin/full-width-fluid-layout/js/lib/chart/flot/jquery.flot.resize.min.js"></script>
+  <script src="http://lab.westilian.com/westilo-admin/full-width-fluid-layout/js/lib/chart/flot/jquery.flot.spline.js"></script>
+  <script src="http://lab.westilian.com/westilo-admin/full-width-fluid-layout/js/lib/chart/flot/jquery.flot.tooltip.min.js"></script>
   <script src="js/parallax.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/owl.carousel.js"></script>
 
   <title>Media Master API</title>
 </head>
@@ -22,19 +27,19 @@
   <div class="loading"></div>
   <div class="overlay">
     <section class="nav-links">
-    <a href="#home"><span class="slide-center-out"><span>Home</span></span></span></a>
-    <a href="#abt"><span class="slide-center-out"><span>Social api</span></span></a>
-    <a href="#feat"><span class="slide-center-out"><span>Recursos</span></span></a>
-    <a href="#contact"><span class="slide-center-out"><span>Obtenha uma licença</span></span></a>
+      <a href="#home"><span class="slide-center-out"><span>Home</span></span></span></a>
+      <a href="#abt"><span class="slide-center-out"><span>Social api</span></span></a>
+      <a href="#feat"><span class="slide-center-out"><span>Recursos</span></span></a>
+      <a href="#contact"><span class="slide-center-out"><span>Obtenha uma licença</span></span></a>
     </section>
     <!--<a href="#"><span class="slide-center-out">Test</span></a>
     <a href="#"><span class="slide-center-out">Test</span></a>-->
   </div>
   <div class="navigation">
-  	<div class="burger_deluxe">
-    	<span class="burger_global top_bun"></span>
-    	<span class="burger_global patty"></span>
-    	<span class="burger_global bottom_bun"></span>
+    <div class="burger_deluxe">
+      <span class="burger_global top_bun"></span>
+      <span class="burger_global patty"></span>
+      <span class="burger_global bottom_bun"></span>
     </div>
   </div>
 
@@ -130,52 +135,109 @@
     </ul>
 
   </section>
-  <section id="contact" class="demo">
-    <h1>Quer uma licença? </h1>
-    <small>Preencha o formulário que entraremos em contato</small>
-    <form class="form-contato">
-       <div class="styled-input">
-         <input type="text" required />
-         <label>Nome Completo</label>
-         <span></span>
-       </div>
-
-       <div class="styled-input">
-         <input type="text" name="Nome" required />
-         <label>Email</label>
-         <span></span>
-       </div>
-
-       <div class="styled-input">
-         <input type="tel" name="Telefone" required />
-         <label>Telefone</label>
-         <span></span>
-       </div>
 
 
-       <div class="styled-input">
-         <input type="text" name="Razão Social" required />
-         <label>Razão Social</label>
-         <span></span>
-       </div>
+  <section class="example">
 
-       <div class="styled-input">
-         <input type="text" name="Razão Social" required />
-         <label>Num. de funcionários</label>
-         <span></span>
-       </div>
 
-       <button id="cadastra" type="submit">Cadastrar</button>
+    <div id="owl-demo" class="owl-carousel owl-theme">
 
-     </form>
-  </section>
+      <div class="item img teste01">
+        <h1>Teste</h1>
+        <hr></hr>
+        <section class="row">
+          <div class="column">
+            <div class="donut-chart" data-donut-chart="1"></div>
+            <p class="desc-graph">teste</p>
+          </div>
+          <div class="column">
+            <div class="donut-chart" data-donut-chart="2"></div>
+            <p class="desc-graph">teste</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="item img teste02">
+        <div class="box">
+          <header><h2>Responsive Flot</h2>
+            <hr></hr>
+          </header>
+          <div id="spline-chart"></div>
+        </div>
+      </div>
+
+
+
+
+    <div class="item img teste03">
+      <h1>Teste</h1>
+      <hr></hr>
+      <ul class="graphs stats-container centered biggie">
+        <li class="animated" data-provide="circular" data-fill-color="#f38181" data-percent="true" data-initial-value="95" data-max-value="100" data-label="Graduate Assistant" data-title="Teste" data-dates="Atualizado há 10 minutos" style="width: 272px; height: 272px;"></li>
+      </ul>
+
+    </div>
+
+  </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section id="contact" class="demo">
+  <h1>Quer uma licença? </h1>
+  <small>Preencha o formulário que entraremos em contato</small>
+  <form class="form-contato">
+    <div class="styled-input">
+      <input type="text" required />
+      <label>Nome Completo</label>
+      <span></span>
+    </div>
+
+    <div class="styled-input">
+      <input type="text" name="Nome" required />
+      <label>Email</label>
+      <span></span>
+    </div>
+
+    <div class="styled-input">
+      <input type="tel" name="Telefone" required />
+      <label>Telefone</label>
+      <span></span>
+    </div>
+
+
+    <div class="styled-input">
+      <input type="text" name="Razão Social" required />
+      <label>Razão Social</label>
+      <span></span>
+    </div>
+
+    <div class="styled-input">
+      <input type="text" name="Razão Social" required />
+      <label>Num. de funcionários</label>
+      <span></span>
+    </div>
+
+    <button id="cadastra" type="submit">Cadastrar</button>
+
+  </form>
+</section>
+
 
 <script>
 $('a[href*=#]').click(function(event){
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 1000);
-    event.preventDefault();
+  $('html, body').animate({
+    scrollTop: $( $.attr(this, 'href') ).offset().top
+  }, 1000);
+  event.preventDefault();
 });
 </script>
 </body>
