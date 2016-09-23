@@ -100,7 +100,8 @@
     transition:cubic-bezier(0.04, 1.02, 1, 1) 1.2s;
   }
   .about li i:hover {
-    color: #f38181;
+    /*color: #fff;*/
+
   }
   .about li p{
     display: block;
@@ -161,7 +162,8 @@
     transition:cubic-bezier(0.04, 1.02, 1, 1) 1.2s;
   }
   .features li i:hover {
-    color: #f38181;
+    color: #fff;
+    /*cursor: pointer;*/
   }
   .features li p{
     display: block;
@@ -181,6 +183,7 @@
     width: 100%;
     height: auto;
     background-color: #f38181;
+    padding-bottom: 2%;
   }
 
   .demo h1{
