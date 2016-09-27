@@ -1,3 +1,45 @@
+// Contato
+$(function() {
+    $('#formContact').on('submit', function(event) {
+        var self = $(this);
+
+        var name = $('#formContact input[name="name"]').val();
+        var email = $('#formContact input[name="email"]').val();
+        var phone = $('#formContact input[name="phone"]').val();
+        var company = $('#formContact input[name="company"]').val();
+        var employees = $('#formContact input[name="employees"]').val();
+
+        // prevent default submit
+        event.preventDefault();
+
+        // validate
+        if(!(name && email && phone && company && employees)) {
+            alert('Por favor, preencha todos os campos para se cadastrar.');
+            return;
+        }
+
+        // send
+        var request = $.post('contact.php', {
+            name: name,
+            email: email,
+            phone: phone,
+            company: company,
+            employees: employees
+        });
+
+        // success
+        request.done(function() {
+            alert('Seus dados foram enviados. Em breve, entraremos em contato.');
+            self.reset();
+        });
+
+        // fail
+        request.fail(function() {
+            alert('Erro ao enviar. Tente novamente.');
+        });
+    });
+
+});
 
 
 // blur on scroll
